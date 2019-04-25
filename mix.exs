@@ -21,7 +21,7 @@ defmodule RabbitmqTutorials.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:amqp, "~> 1.1.1"}
+      {:amqp, "~> 1.2"}
     ]
   end
 end
