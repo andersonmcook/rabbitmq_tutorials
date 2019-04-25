@@ -13,10 +13,8 @@ defmodule Worker do
         |> :timer.sleep()
 
         IO.puts("Done")
-
         # Ack after work is done
         AMQP.Basic.ack(channel, meta.delivery_tag)
-
         wait_for_messages(channel)
     end
   end
